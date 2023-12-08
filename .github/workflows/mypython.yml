@@ -22,4 +22,4 @@ jobs:
           python-version: 3.10.7
           
       - name: Run Program   
-        run: python hy.py
+        run: python .github/hy.py
