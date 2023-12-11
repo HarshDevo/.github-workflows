@@ -18,7 +18,7 @@ jobs:
       - name: Set Environment variables
         shell: cmd
         run: 
-          call C:/Batch_file/set-folders.bat
+          call C:/Batch_file
 
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
