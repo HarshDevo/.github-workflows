@@ -14,11 +14,11 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Set Environment variables
         shell: cmd
         run: 
-          call set-folders.bat
+          call C:\\Batch_file\\set-folders.bat
 
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
