@@ -16,9 +16,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Set Environment variables
-        shell: cmd
-        run: 
-          call C:/Batch_file/set.batch
+        shell: C:\Windows\System32\cmd.exe
+        run: call C:/Batch_file/set.batch
 
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
