@@ -15,10 +15,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+        
       - name: Set Environment variables
-        shell: cmd
-        run:  C:\Windows\System32\cmd.exe 
-              call "C:\Batch_file\set.batch"
+        run:  
+          call "C:\Batch_file\set.batch"
 
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
