@@ -19,7 +19,7 @@ jobs:
       - name: Set Environment variables
         shell: cmd
         run:  
-          call .github/env_var.env
+          call env_var.env
 
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
