@@ -12,14 +12,18 @@ jobs:
   build:
     runs-on: windows-latest
 
+    env:
+      API_KEY: 1234
+      USERNAME: "harsh"
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
         
-      - name: Set Environment variables
-        shell: cmd
-        run:  
-          call env_var.env
+    #  - name: Set Environment variables
+    #    shell: cmd
+    #    run:  
+     #     call env_var.env
 
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
