@@ -17,8 +17,9 @@ jobs:
         uses: actions/checkout@v2
         
       - name: Set Environment variables
+        shell: cmd
         run:  
-          call "C:\Batch_file\set.batch"
+          call .github/env_var.env
 
       - name: Set up Python
         uses: actions/setup-python@v5.0.0
@@ -28,6 +29,6 @@ jobs:
       - name: Run Program   
         run: python .github/hy.py
         env:
-          FOLDER1: ${{ env.FOLDER1 }}
-          FOLDER2: ${{ env.FOLDER2 }}
-          FOLDER3: ${{ env.FOLDER3 }}
+          FOLDER1: ${{ secrets.API_KEY }}
+          FOLDER2: ${{ secrets.USERNAME }}
+          
