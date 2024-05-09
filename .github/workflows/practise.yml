@@ -4,7 +4,7 @@ on: push
 
 jobs:
   python-linting-code:
-    runs-on: windows
+    runs-on: windows-latest
 
     steps:
       - name: Super-Linter
