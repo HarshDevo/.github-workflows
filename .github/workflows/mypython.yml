@@ -11,10 +11,10 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-
+    environment: env
     env:
-      API_KEY: ${var.API_KEY}
-      USERNAME: ${var.USERNAME}
+      API_KEY: ${{vars.API_KEY}}
+      USERNAME: ${{vars.USERNAME}}
 
     steps:
       - name: Checkout Repository
