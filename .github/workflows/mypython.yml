@@ -13,8 +13,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      API_KEY: ${env.API_KEY}
-      USERNAME: ${env.USERNAME}
+      API_KEY: ${var.API_KEY}
+      USERNAME: ${var.USERNAME}
 
     steps:
       - name: Checkout Repository
