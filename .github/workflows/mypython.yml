@@ -32,7 +32,7 @@ jobs:
           
       - name: Run Program   
         run: python .github/hy.py
-        env:
-          FOLDER1: ${{ secrets.API_KEY }}
-          FOLDER2: ${{ secrets.USERNAME }}
+        #env:
+          #FOLDER1: ${{ secrets.API_KEY }}
+          #FOLDER2: ${{ secrets.USERNAME }}
           
